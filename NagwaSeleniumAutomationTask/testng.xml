@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" thread-count="1"  parallel="tests" >
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="Chrome" />
+        <parameter name="language" value="English" />
+        <parameter name="lesson" value="addition" />
+        <parameter name="lessonNumber" value="2" />
+
+        <classes>
+            <class name="GetNumberOfQs.GetNumberOfQsTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
